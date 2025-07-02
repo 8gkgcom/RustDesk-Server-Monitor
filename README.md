@@ -21,11 +21,11 @@
 
 在运行脚本前，您需要根据实际环境修改脚本开头的几个配置参数：
 
-1.  **`DB_PATH`**: **(必须修改)**
+1.  **`DB_PATH`**: 
     此参数需要设置为您 RustDesk 服务器 `hbbs` 生成的 `db_v2.sqlite3` 数据库文件的 **绝对路径**。
     ```python
     # 例如:
-    DB_PATH = "/root/rustdesk-server/db_v2.sqlite3"
+    DB_PATH = "/var/lib/rustdesk-server/db_v2.sqlite3"
     ```
 
 2.  **`MONITOR_DB_PATH`**:
@@ -117,4 +117,4 @@ python rustdesk_monitor.py
     ```
     编译成功后，会在 `dist` 目录下生成一个可执行文件。
 
-这是基于官方1.1.14服务端写的，可以直接使用官方的客户端，方便纯个人使用。
+这是基于官方1.1.14服务端写的，可以直接使用官方的客户端1.4.0，方便纯个人使用。
